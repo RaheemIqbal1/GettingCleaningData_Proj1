@@ -1,7 +1,6 @@
-
-
- Introduction:
- =============
+==============
+Introduction:
+==============
 This R script run_analysis.R does the following using the Human Activity Recognition Using Smartphones Dataset [1].
 
 The data was downloaded from the following link on 16-May-2014, at 5:20 Pm ET USA.
@@ -29,7 +28,7 @@ R language V3.1.0 was used for performing the analysis [2].
 
 2. It then merges the training and the test sets to create one final data set xData, with 10299 rows and 563 columns.
 
-3. It Checks and report any missing values (NA�s). It cleans up the Features names by removing characters such as () - ,
+3. It Checks and report any missing values (NAs). It cleans up the Features names by removing characters such as () - ,
    and take care of duplicate Feature names. See Table-1 for a list of duplicate Feature names.
 
 4. Extracts only the measurements on the mean and standard deviation for each measurement and create a new data set 'meanStdData'. 
