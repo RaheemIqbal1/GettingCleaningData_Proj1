@@ -181,4 +181,5 @@ names(aggrData)[1] <- c("Activity")
 names(aggrData)[2] <- c("Subject")
 aggrData <- aggrData[with(aggrData, order(Activity, Subject)), ]
 write.table(aggrData, "avgData.csv",col.names = TRUE, row.names=FALSE, sep = ",")
+write.table(aggrData, "avgData.txt", sep="\t")
 
