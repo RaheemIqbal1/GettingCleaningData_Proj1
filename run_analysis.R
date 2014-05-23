@@ -176,7 +176,7 @@ colnames(aggrData)[3:88] <- paste("Avg", colnames(aggrData)[3:88], sep="")
 #--------------------------
 # Step-7 (Write Tidy Data)
 #--------------------------
-# Write tidy data set to a csv file
+# Write tidy data set to a csv and text file
 names(aggrData)[1] <- c("Activity")
 names(aggrData)[2] <- c("Subject")
 aggrData <- aggrData[with(aggrData, order(Activity, Subject)), ]
