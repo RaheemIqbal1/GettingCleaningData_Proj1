@@ -1,9 +1,8 @@
 
 
-
  Introduction:
  =============
-This R script �run_analysis.R� does the following using the Human Activity Recognition Using Smartphones Dataset [1].
+This R script run_analysis.R does the following using the Human Activity Recognition Using Smartphones Dataset [1].
 
 The data was downloaded from the following link on 16-May-2014, at 5:20 Pm ET USA.
 
@@ -28,9 +27,9 @@ R language V3.1.0 was used for performing the analysis [2].
    The feature and activity label files are present under the working directory with the following directory structure.
 	.\UCI HAR Dataset
 
-2. It then merges the training and the test sets to create one final data set �xData�, with 10299 rows and 563 columns.
+2. It then merges the training and the test sets to create one final data set xData, with 10299 rows and 563 columns.
 
-3. It Checks and report any missing values (NA�s). It cleans up the Features names by removing characters such as �() -  ,�  
+3. It Checks and report any missing values (NA�s). It cleans up the Features names by removing characters such as () - ,
    and take care of duplicate Feature names. See Table-1 for a list of duplicate Feature names.
 
 4. Extracts only the measurements on the mean and standard deviation for each measurement and create a new data set 'meanStdData'. 
@@ -55,15 +54,15 @@ The following observations were made during the analysis
 
     * Number of features (columns) in the first data set 'xData' : 563;  Number of samples/observations (rows): 10299
 
-    * No missing data was found, i.e. no NA�s we present in 'xData' 
+    * No missing data was found, i.e. no NAs we present in 'xData' 
 
     * 84 duplicate column names were found in the data set 'xData'. This means a total of 146 columns could create conflict.
 
-    * Column name contained characters such as �()�,  �,�  and �-�
+    * Column name contained characters such as ()  ,  -
 
     * Out of 563, 561 features are numeric type. Column no 562 and 563 (Subject, Activity) are of factor type in the 'xData'
 
-    * There are 86 columns with the word 'mean' and 'std' in the feature names of 'xData'
+    * There are 86 columns with the word 'mean' and 'std' in the feature names of xData
 
     * The final tidy data set 'aggrData' with column averages contains 180 rows and 88 columns 
       including the 'Activity' and 'Subject' columns
@@ -127,4 +126,4 @@ The following observations were made during the analysis
 =============
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
-[2] R Core Team (2012). �R: A language and environment for statistical computing.� URL: http://www.R-project.org
+[2] R Core Team (2012). R: A language and environment for statistical computing.� URL: http://www.R-project.org
