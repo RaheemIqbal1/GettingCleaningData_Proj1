@@ -1,8 +1,8 @@
 
-##==============
-## Introduction:
-## =============
-This R script ‘run_analysis.R’ does the following using the Human Activity Recognition Using Smartphones Dataset [1].
+==============
+ Introduction:
+ =============
+This R script ï¿½run_analysis.Rï¿½ does the following using the Human Activity Recognition Using Smartphones Dataset [1].
 
 The data was downloaded from the following link on 16-May-2014, at 5:20 Pm ET USA.
 
@@ -10,15 +10,15 @@ The data was downloaded from the following link on 16-May-2014, at 5:20 Pm ET US
 
 R language V3.1.0 was used for performing the analysis [2].
 
-##========
-## Steps:
-##========
+========
+ Steps:
+========
 1. Read the following files from the local disk as data frames
 	X_test, y_test, subject_test
 	X_train, y_train, subject_tain
 	activity_labels.txt, features.txt
 
-   It is assumed that the UCI data files are already downloaded from the link provided above, and they resides on the local disk
+   It is assumed that the UCI data files are already downloaded from the link provided above, and they resides on the   local disk
 
    The R script expects the test and train data files are present under the working directory with the following directory structure.
 	.\UCI HAR Dataset\test
@@ -27,9 +27,9 @@ R language V3.1.0 was used for performing the analysis [2].
    The feature and activity label files are present under the working directory with the following directory structure.
 	.\UCI HAR Dataset
 
-2. It then merges the training and the test sets to create one final data set ‘xData’, with 10299 rows and 563 columns.
+2. It then merges the training and the test sets to create one final data set ï¿½xDataï¿½, with 10299 rows and 563 columns.
 
-3. It Checks and report any missing values (NA’s). It cleans up the Features names by removing characters such as ‘() -  ,’  
+3. It Checks and report any missing values (NAï¿½s). It cleans up the Features names by removing characters such as ï¿½() -  ,ï¿½  
    and take care of duplicate Feature names. See Table-1 for a list of duplicate Feature names.
 
 4. Extracts only the measurements on the mean and standard deviation for each measurement and create a new data set 'meanStdData'. 
@@ -46,19 +46,19 @@ R language V3.1.0 was used for performing the analysis [2].
 7. Write the final tidy data set to a csv file 'avgData.csv'
 
 
-##====================
-## Some Observations: 
-##====================
+====================
+ Some Observations: 
+====================
 
 The following observations were made during the analysis
 
     * Number of features (columns) in the first data set 'xData' : 563;  Number of samples/observations (rows): 10299
 
-    * No missing data was found, i.e. no NA’s we present in 'xData' 
+    * No missing data was found, i.e. no NAï¿½s we present in 'xData' 
 
     * 84 duplicate column names were found in the data set 'xData'. This means a total of 146 columns could create conflict.
 
-    * Column name contained characters such as ‘()’,  ‘,’  and ‘-‘
+    * Column name contained characters such as ï¿½()ï¿½,  ï¿½,ï¿½  and ï¿½-ï¿½
 
     * Out of 563, 561 features are numeric type. Column no 562 and 563 (Subject, Activity) are of factor type in the 'xData'
 
@@ -73,9 +73,9 @@ The following observations were made during the analysis
     * There are 30 Subject Levels (a factor type); 1 through 30
 
 
-##====================================
-## Table - 1 (Duplicate Column Names) 
-##====================================
+====================================
+ Table - 1 (Duplicate Column Names) 
+====================================
 
 303 fBodyGyro-bandsEnergy()-9,16  462 fBodyAccJerk-bandsEnergy()-9,16   513 fBodyAcc-bandsEnergy()-9,16
 304 fBodyGyro-bandsEnergy()-9,16  463 fBodyAccJerk-bandsEnergy()-9,16   514 fBodyAcc-bandsEnergy()-9,16
@@ -121,9 +121,9 @@ The following observations were made during the analysis
 344 fBodyGyro-bandsEnergy()-1,16  503 fBodyAccJerk-bandsEnergy()-1,16   554 fBodyAcc-bandsEnergy()-,16
 
 
-##=============
-## References:
-##=============
+=============
+ References:
+=============
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
-[2] R Core Team (2012). ”R: A language and environment for statistical computing.” URL: http://www.R-project.org
+[2] R Core Team (2012). ï¿½R: A language and environment for statistical computing.ï¿½ URL: http://www.R-project.org
