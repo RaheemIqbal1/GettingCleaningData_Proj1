@@ -2,9 +2,9 @@
 The tidy data set 'avgData.csv' created by the R script 'run_analysis.R'.
 Please refer to README.md file for the details of how the tidy data set was created.
 
-##===========
-## Features:
-##===========
+===========
+ Features:
+===========
 A brief description of 88 features contained in the data set is as follows 
 
 Activity: Factor type, feature with 6 Activity levels. Activity of the person carrying the smart phone
@@ -30,9 +30,9 @@ Gyro: Gyroscope sensor signals
 Freq: Frequency signal
 Mag:  Magnitude
 
-##================
-## Feature Names:
-##================
+================
+ Feature Names:
+================
  1. Activity                            
  2. Subject                             
  3. AvgtBodyAccmeanX                    
@@ -122,9 +122,9 @@ Mag:  Magnitude
 87. AvgfBodyBodyGyroMagstd           
 88. AvgfBodyBodyGyroJerkMagstd
 
-##=====================
-## Some Observations: 
-##=====================
+=====================
+ Some Observations: 
+=====================
 
 The following are some key facts about the final tidy data set 
 
@@ -136,9 +136,9 @@ The following are some key facts about the final tidy data set
 
     * There are 30 Subject Levels (a factor type), 1 through 30, in the tidy data set.
 
-##======================
-## Data Transformation: 
-##======================
+======================
+ Data Transformation: 
+======================
     * The following files were merged to create the first data set
 
 	X_test, y_test, subject_test
@@ -147,13 +147,13 @@ The following are some key facts about the final tidy data set
 
       This full data set contained 563 Features and 10299 Records
 
-    * No missing data was found in the full data set, i.e. no NA’s we present in the full data set
+    * No missing data was found in the full data set, i.e. no NAï¿½s we present in the full data set
 
     * 84 duplicate column names were found in the original data set, which means there are 146 total 
       columns which could create conflict. These were renamed by affixing X, Y, Z at the end to fix 
       the conflict. 
 
-    * Feature (column) name contained characters such as ‘()’,  ‘,’  and ‘-‘ which were removed
+    * Feature (column) name contained characters such as ï¿½()ï¿½,  ï¿½,ï¿½  and ï¿½-ï¿½ which were removed
 
     * A second data set was then created with Feature names containing the key words 'mean' and 'std'.
       Activity and Subject columns were also merged to this data set. This full data set contains 88 Features 
@@ -163,9 +163,9 @@ The following are some key facts about the final tidy data set
       calculating the average of each variable for each activity and every subject. The tidy data set has 
       180 rows and 88 columns. Note that this data set also contains Activity and Subject columns
 
-##=========================
-## Duplicate Column Names:
-##=========================
+=========================
+ Duplicate Column Names:
+=========================
 
 303 fBodyGyro-bandsEnergy()-9,16  462 fBodyAccJerk-bandsEnergy()-9,16   513 fBodyAcc-bandsEnergy()-9,16
 304 fBodyGyro-bandsEnergy()-9,16  463 fBodyAccJerk-bandsEnergy()-9,16   514 fBodyAcc-bandsEnergy()-9,16
