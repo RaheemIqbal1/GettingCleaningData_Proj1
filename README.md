@@ -1,5 +1,6 @@
 
-==============
+
+
  Introduction:
  =============
 This R script �run_analysis.R� does the following using the Human Activity Recognition Using Smartphones Dataset [1].
