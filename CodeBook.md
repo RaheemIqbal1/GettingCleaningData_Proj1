@@ -33,15 +33,15 @@ Mag:  Magnitude
 ================
  Feature Names:
 ================
- 1. Activity                            
- 2. Subject                             
- 3. AvgtBodyAccmeanX                    
- 4. AvgtBodyAccmeanY                    
- 5. AvgtBodyAccmeanZ                    
- 6. AvgtGravityAccmeanX                 
- 7. AvgtGravityAccmeanY                 
- 8. AvgtGravityAccmeanZ                 
- 9. AvgtBodyAccJerkmeanX                
+01. Activity                            
+02. Subject                             
+03. AvgtBodyAccmeanX                    
+04. AvgtBodyAccmeanY                    
+05. AvgtBodyAccmeanZ                    
+06. AvgtGravityAccmeanX                 
+07. AvgtGravityAccmeanY                 
+08. AvgtGravityAccmeanZ                 
+09. AvgtBodyAccJerkmeanX                
 10. AvgtBodyAccJerkmeanY                
 11. AvgtBodyAccJerkmeanZ                
 12. AvgtBodyGyromeanX                   
@@ -147,13 +147,13 @@ The following are some key facts about the final tidy data set
 
       This full data set contained 563 Features and 10299 Records
 
-    * No missing data was found in the full data set, i.e. no NA�s we present in the full data set
+    * No missing data was found in the full data set, i.e. no NA we present in the full data set
 
     * 84 duplicate column names were found in the original data set, which means there are 146 total 
       columns which could create conflict. These were renamed by affixing X, Y, Z at the end to fix 
       the conflict. 
 
-    * Feature (column) name contained characters such as �()�,  �,�  and �-� which were removed
+    * Feature (column) name contained characters such as () , - which were removed
 
     * A second data set was then created with Feature names containing the key words 'mean' and 'std'.
       Activity and Subject columns were also merged to this data set. This full data set contains 88 Features 
