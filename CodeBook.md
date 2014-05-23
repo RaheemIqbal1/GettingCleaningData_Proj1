@@ -1,4 +1,6 @@
-
+==============
+Introduction:
+==============
 The tidy data set 'avgData.csv' created by the R script 'run_analysis.R'.
 Please refer to README.md file for the details of how the tidy data set was created.
 
